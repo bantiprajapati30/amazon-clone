@@ -1,0 +1,24 @@
+.home__wrapper {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $backgroundGrey;
+  .banner__wrapper {
+    display: flex;
+    z-index: -1;
+    margin-bottom: -120px;
+    img {
+      width: 100%;
+      mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)
+      );
+    }
+  }
+  .production-container {
+    display: flex;
+    grid-gap: 10px;
+    margin: 0 10px;
+  }
+}

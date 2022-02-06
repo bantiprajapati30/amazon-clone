@@ -1,0 +1,21 @@
+/** @format */
+
+.checkoutProduct__wrapper {
+  padding: 10px 0;
+  display: flex;
+  grid-gap: 15px;
+  .rating {
+    display: flex;
+  }
+  .image__wrapper {
+      min-width: 240px;
+      display: flex;
+      justify-content: center;
+    img {
+      max-width: 240px;
+    }
+  }
+  strong {
+    color: $colorSecondary;
+  }
+}

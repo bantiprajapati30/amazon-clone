@@ -1,0 +1,83 @@
+/** @format */
+
+.login__wrapper {
+  img {
+    display: block;
+    margin: auto;
+  }
+  h1 {
+    color: #333;
+  }
+  .container {
+    border: 1px solid $backgroundGrey;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    padding-top: 15px;
+    display: grid;
+    border-radius: 5px;
+    form {
+      display: grid;
+    }
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    input {
+      background-color: #fff;
+      height: 31px;
+      padding: 3px 7px;
+      line-height: normal;
+      border: 1px solid #a6a6a6;
+      border-top-color: #949494;
+      border-radius: 3px;
+      outline: 0;
+    }
+    button.login-btn {
+      background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+      border-color: #a88734 #9c7e31 #846a29;
+      color: #111;
+      border-radius: 2px;
+      &:hover {
+        background: linear-gradient(to bottom, #f5d78e, #eeb933);
+      }
+    }
+    small {
+      display: block;
+      margin-top: 25px;
+      width: fit-content;
+      &.help {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+  .new-account {
+    width: 350px;
+    margin:25px auto;
+    p {
+      text-align: center;
+     font-size: 15px;
+     margin-top: 10px;
+    }
+    .create-btn {
+      width: 100%;
+      border-radius: 2px;
+      background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+      &:hover {
+        background: linear-gradient(to bottom, #e7eaf0, #d9dce1);
+      }
+    }
+  }
+}
+.text-blue {
+  color: #0066c0;
+  text-decoration: none;
+  font-weight: 500;
+  &:hover {
+    text-decoration: underline;
+    color: $colorSecondary;
+    cursor: pointer;
+  }
+}

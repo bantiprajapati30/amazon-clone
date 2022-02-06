@@ -1,0 +1,47 @@
+/** @format */
+
+.checkout__container {
+  .checkout__ad {
+    height: 218px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .checkoutProduct__container {
+    padding: 15px;
+    width: 80%;
+    .title__heading {
+      margin-bottom: 8px;
+      border-bottom: 1px solid #61676e30;
+      padding-bottom: 8px;
+    }
+  }
+  .empty__basket {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 15px;
+    margin-top: 15px;
+    img {
+      width: 300px;
+    }
+    a {
+      text-decoration: none;
+      color: grey;
+      &:hover {
+        color: $colorSecondary;
+        text-decoration: underline;
+      }
+    }
+    .btn-container {
+      display: flex;
+      grid-gap: 5px;
+      button {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.header {
+  padding: 1px 5px;
+  background-color: $colorHeader;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  .logo {
+    width: 110px;
+    object-fit: contain;
+  }
+  .search__wrapper {
+    margin-left: 10px;
+    display: flex;
+    height: 30px;
+    flex: 1;
+    input {
+      border-radius: 2px;
+      border: none;
+      width: 100%;
+      padding-right: 26px;
+      &:focus-visible {
+        border: 1px solid $colorYellow;
+      }
+    }
+    .search-icon {
+      background-color: $colorYellow;
+      margin-left: -24px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      height: 100%;
+      padding: 0 2px;
+    }
+  }
+  .header__nav {
+    margin: 0 20px;
+    display: flex;
+    grid-gap: 20px;
+    .header__link {
+      text-decoration: none;
+    }
+    .header__option {
+      display: grid;
+      color: $colorWhite;
+      font-size: 13px;
+      span:last-child {
+        font-weight: 600;
+        font-size: 15px;
+      }
+    }
+    .header__cart {
+      text-decoration: none;
+      .header__option {
+        display: flex;
+        span:first-child {
+          position: relative;
+          svg {
+            font-size: 33px;
+            margin-top: 3px;
+          }
+          &::before {
+            content: "";
+            width: 20px;
+            height: 7px;
+            top: 6px;
+            right: 6px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            position: absolute;
+            background-color: $colorHeader;
+          }
+          .count {
+            color: $colorYellow;
+            position: absolute;
+            right: 13px;
+            top: -5px;
+            font-weight: 700;
+          }
+        }
+        span:last-child {
+          align-self: flex-end;
+          margin-bottom: 2px;
+        }
+      }
+    }
+  }
+}
