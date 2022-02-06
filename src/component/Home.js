@@ -29,7 +29,7 @@ const Home = () => {
           price={91950}
           id={323456}
           title={
-            "Fujifilm X-E4 Mirrorless Camera Body with XF27mmF2.8 R WR Prime Lens- Black (Compact Body, X-Trans CMOS 4 Sensor, Fast AF, Face/Eye AF, 180° Tilting LCD Screen, EVF, 4K Video, Film Simulation Modes)"
+            "Fujifilm X-E4 Mirrorless Camera Body with XF27mmF2.8 R WR Prime Lens- Black (Compact Body, X-Trans CMOS 4 Sensor, Fast AF, Face/Eye AF, 180° Tilting LCD Screen, EVF, 4K Video, test, Film Simulation Modes)"
           }
           rating={5}
         />
