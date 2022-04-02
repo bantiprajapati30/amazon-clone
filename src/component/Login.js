@@ -34,7 +34,7 @@ function Login() {
   return (
     <div className="login__wrapper">
       <Link to={"/"}>
-        <img className="logo" src={logo} alt="logo"/>
+        <img className="logo" src={logo} alt="logo" />
       </Link>
       <div className="container">
         <h1>Sign-in</h1>
