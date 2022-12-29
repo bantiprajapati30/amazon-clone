@@ -9,8 +9,9 @@ import "./scss/style.scss";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import { useEffect } from "react";
+import ErrorBoundary from "./ErrorBoundary";
 function App() {
-  const [{user}, dispatch] =useStateValue();
+  const [ dispatch] =useStateValue();
   useEffect(() => {
     const unsubcribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
@@ -30,9 +31,10 @@ function App() {
     return ()=> {
       unsubcribe();
     };
-  }, []);
+  }, [dispatch]);
   return (
     <>
+    <ErrorBoundary>
       <Router>
         <div className="app">
           <Switch>
@@ -43,13 +45,14 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
-            <Route path="/">
+            <Route exact path="/">
               <Header />
               <Home />
             </Route>
           </Switch>
         </div>
       </Router>
+      </ErrorBoundary>
     </>
   );
 }

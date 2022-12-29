@@ -4,7 +4,8 @@ import React from "react";
 import { useStateValue } from "../StateProvider";
 
 const CheckoutProduct = ({ id, title, price, rating, image }) => {
-  const [{ Basket }, dispatch] = useStateValue();
+  const [ dispatch] = useStateValue();
+let currency = "INR"
   const RemoveFromBasket = () => {
     dispatch({
       type: "REMOVE_FROM_BASKET",
@@ -14,12 +15,12 @@ const CheckoutProduct = ({ id, title, price, rating, image }) => {
    const numberFormat = (value) =>
      new Intl.NumberFormat("en-IN", {
        style: "currency",
-       currency: "INR",
+       currency: currency.naem,
      }).format(value);
   return (
     <div ke={id} className="checkoutProduct__wrapper">
       <div className="image__wrapper">
-        <img src={image} />
+        <img src={image} alt=""/>
       </div>
 
       <div>

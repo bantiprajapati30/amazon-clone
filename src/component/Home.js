@@ -37,11 +37,11 @@ const Home = () => {
       <div className="production-container">
         <Product
           image={
-            "https://m.media-amazon.com/images/I/71QT7dSK4BL._AC_UY218_.jpg"
+            "https://rukminim1.flixcart.com/image/416/416/ktketu80/mobile/s/n/i/iphone-13-mlpk3hn-a-apple-original-imag6vpyrhqjgqzw.jpeg?q=70"
           }
-          price={21999}
+          price={108000}
           id={123456}
-          title={"Samsung Galaxy M32 5G (Sky Blue, 8GB RAM, 128GB Storage)"}
+          title={"APPLE iPhone 13 (Blue, 128 GB)"}
           rating={5}
         />
         <Product

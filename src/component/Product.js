@@ -28,9 +28,7 @@ const Product = ({ id, title, price, rating, image }) => {
     <div className="product__wrapper" key={id}>
       <div className="overview__container">
         <p>{title}</p>
-        <p className="price">
-          {numberFormat(price)}
-        </p>
+        <p className="price">{numberFormat(price)}</p>
         <div className="rating-wrapper">
           {Array(rating)
             .fill()
