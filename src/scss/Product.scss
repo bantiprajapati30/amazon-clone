@@ -15,7 +15,11 @@
     min-height: 120px;
     img {
       max-width: 280px;
+      &#product123456 {
+        max-width: 100px;
+      }
     }
+
   }
   .price {
     color: $colorSecondary;
