@@ -4,7 +4,7 @@ import React from "react";
 import { useStateValue } from "../StateProvider";
 
 const Product = ({ id, title, price, rating, image }) => {
-  const [{ basket }, dispatch] = useStateValue();
+  const [ dispatch] = useStateValue();
 
    const numberFormat = (value) =>
      new Intl.NumberFormat("en-IN", {

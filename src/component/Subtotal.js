@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import ErrorSharpIcon from "@mui/icons-material/ErrorSharp";
 const Subtotal = () => {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket }] = useStateValue();
 
   return (
     <div className="subtotal__wrapper">

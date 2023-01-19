@@ -1,0 +1,15 @@
+.no-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
